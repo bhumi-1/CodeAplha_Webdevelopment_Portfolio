@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-eqiv='X-UA-Compatible' content="IS=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4e7cefdab.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm  <span>Bhumika</span><br>SR University from Warangal</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://media.giphy.com/media/24b9nUo2GyAla/200.gif">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am the student of SR University persuing Btech ComputerScience and Engineering
+                        My aim is to enter into a reputed organisation and explore
+                        my knowledge in particular domain and provide my service</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Student</span><br>Persuing Btech</li>
+                            <li><span>ComputerScience</span><br>Focused on networks</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - current</span><br>Btech 4th year</li>
+                            <li><span>2020-2024</span><br>Persuing graduation at SR University</li>
+                            <li><span2018-2020</span><br>completed 12th grade</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Listening Music</span><br>Classics</li>
+                            <li><span>Playing games</span><br>carrom</li>
+                        </ul>
+                    </div>
+                    
+                    
+        </div>
+        </div>
+    </div>
+</div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Student</h2>
+                <p>I as a Student performed projects and involved in group discussions</p>
+                <a href="#">learn more</a>
+            </div>
+        <div>
+        <i class="fa-solid fa-crop-simple"></i>
+        <h2>ComputerScience</h2>
+        <p>I completed complete three years of my Btech in the course of computer ComputerScience
+            and I am eagerly waiting to show and explore my experience and knowledge to an organisation
+        </p>
+        <a href="#">learn more</a>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+             <h1 class="sub-title">My Work</h1>
+             <div class="work-list">
+                <div class="work">
+                 <img src="https://thumbs.dreamstime.com/b/young-beautiful-woman-working-cartoon-character-person-office-work-girl-worker-rejoices-success-behind-desk-table-121338163.jpg">
+                 <div class="layer"></div>   
+                        <h3 style="color:red; font-size:20px">Presently Internships</h3>
+                        <p style="color:#ff0000;font-size:18px">I am working on codealpha Internship which is an extream good experience in fulfilling their tasks by exploring my knowledge and skills. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div>
+             </div>
+             <a href="#" class="btn">See more</a>
+        </div>
+        </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class= "fa-solid fa-paper-plane"></i>contact@whatsapp.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>0124563268</p>
+            <div class="social-icons">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="C:\Users\Bhumika\Desktop\Resume Templates.docx" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                 <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholders="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+          </div>
+       </div>
+   </div>
+   <div class="copyright">
+    <p>Copyright @ Bhumika.Made by <i class="fa-solid fa-heart"></i>Student</p>
+   </div>
+</div> 
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
